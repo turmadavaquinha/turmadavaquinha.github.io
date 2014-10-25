@@ -1,0 +1,54 @@
+.youtube {
+    @include cf();
+
+    background-color: #FFF;
+    color: #563818;
+    padding: 24px 24px 0;
+    position: relative;
+    text-align: center;
+
+    @include media-query(desk) {
+        height: 326px;
+        padding: 24px 48px 0;
+    }
+}
+
+.youtube-title {
+    font-family: 'Oleo Script';
+    font-size: 30px;
+}
+
+.youtube-body {
+    padding-bottom: 24px;
+    position: relative;
+    text-align: left;
+    z-index: 222;
+
+    @include media-query(lap) {
+        width: 70%;
+    }
+
+    @include media-query(desk) {
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        position: relative;
+        top: 50%;
+        width: 35%;
+    }
+}
+
+
+.youtube-img {
+    display: inline-block;
+    margin-bottom: -7px;
+    right: 0;
+    bottom: 0;
+    z-index: 111;
+    max-width:100%;
+
+    @include media-query(desk) {
+        position: absolute;
+    }
+}

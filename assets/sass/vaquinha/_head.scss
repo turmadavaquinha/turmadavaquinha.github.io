@@ -1,0 +1,50 @@
+.head-top {
+    text-align: right;
+}
+
+.head-top-nav {
+    line-height: 1;
+    margin: 0;
+    padding: 12px 0;
+
+    > li {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 12px;
+
+        > a {
+            display: block;
+
+            > img {
+                display: block;
+            }
+        }
+    }
+}
+
+.head-bot {
+    background-color: #33280f;
+    background-image: url(../img/wood_bg.png);
+    background-repeat: repeat;
+    background-position: center;
+    padding: 15px 24px;
+    position: relative;
+    text-align: center;
+
+    @include media-query(desk) {
+        background-image: url(../img/head-bot-desk.png);
+        padding: 15px 48px;
+        text-align: left;
+    }
+}
+
+.head-bot-img {
+    display: none;
+    bottom: 0;
+    right: 120px;
+    position: absolute;
+
+    @include media-query(desk) {
+        display: block;
+    }
+}

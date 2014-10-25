@@ -1,0 +1,18 @@
+.btn {
+    background-color: gray;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(#000, .4);
+}
+
+.btn--positive {
+    background-color: #aabb2c;
+
+    &:hover {
+        background-color: darken(#aabb2c, 8%);
+    }
+}

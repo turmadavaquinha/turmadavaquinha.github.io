@@ -1,0 +1,1107 @@
+/*
+* dragon.scss
+**/
+/*
+* _normalize.scss
+**/
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/**
+ * 1. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 12, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 1 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 21, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 43, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 55, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 65, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 76, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 87, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 107, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 116, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 124, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 133, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 142, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 151, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 160, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 167, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 171, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 182, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 190, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 201, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 209, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 219, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 254, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+/* line 264, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 276, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 301, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 310, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 320, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 333, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 345, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 355, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 369, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 377, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 388, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+/* line 397, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 406, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 417, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 423, ../sass/bower_components/dragoncss/generic/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*
+* _box-sizing.scss
+**/
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ */
+/* line 11, ../sass/bower_components/dragoncss/generic/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+* _clearfix.scss
+**/
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.cf:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+* _reset.scss
+**/
+/**
+ * The usual...
+ */
+/* line 13, ../sass/bower_components/dragoncss/generic/_reset.scss */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+table, th, td, caption,
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Give a help cursor to elements that give extra info on `:hover`.
+ */
+/* line 21, ../sass/bower_components/dragoncss/generic/_reset.scss */
+abbr[title], dfn[title] {
+  cursor: help;
+}
+
+/**
+ * Remove underlines from potentially troublesome elements.
+ */
+/* line 28, ../sass/bower_components/dragoncss/generic/_reset.scss */
+u, ins {
+  text-decoration: none;
+}
+
+/**
+ * Apply faux underline via `border-bottom`.
+ */
+/* line 35, ../sass/bower_components/dragoncss/generic/_reset.scss */
+ins {
+  border-bottom: 1px solid;
+}
+
+/**
+ * So that 'alt' text is visually offset if images don't load.
+ */
+/* line 42, ../sass/bower_components/dragoncss/generic/_reset.scss */
+img {
+  font-style: italic;
+}
+
+/**
+ * Give form elements some cursor interactions...
+ */
+/* line 54, ../sass/bower_components/dragoncss/generic/_reset.scss */
+label,
+input,
+textarea,
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+/* line 61, ../sass/bower_components/dragoncss/generic/_reset.scss */
+.input:active,
+.input:focus,
+textarea:active,
+textarea:focus {
+  cursor: text;
+  outline: none;
+}
+
+/*
+* _layout.scss
+**/
+/* line 6, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout {
+  margin-left: -24px;
+  list-style: none;
+  margin-bottom: 0;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.layout:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 14, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout__item {
+  float: left;
+  padding-left: 24px;
+  width: 100%;
+}
+
+/* line 22, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--half {
+  margin-left: -12px;
+}
+/* line 25, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--half > .layout__item {
+  padding-left: 12px;
+}
+
+/* line 30, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--quarter {
+  margin-left: -6px;
+}
+/* line 33, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--quarter > .layout__item {
+  padding-left: 6px;
+}
+
+/* line 38, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--full {
+  margin-left: 0;
+}
+/* line 41, ../sass/bower_components/dragoncss/objects/_layout.scss */
+.layout--full > .layout__item {
+  padding-left: 0;
+}
+
+/*
+* _widths.scss
+*
+* by csswizardry
+**/
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * If you are building a non-responsive site but would still like to use
+ * csswizardry-grids, set this to 'false':
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like push and pull classes enabled?
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to 'true'.
+ */
+/**
+ * You do not need to edit anything from this line onward; csswizardry-grids is
+ * good to go. Happy griddin'!
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * Create our width classes, prefixed by the specified namespace.
+ */
+/**
+ * Push classes, to move grid items over to the right by certain amounts.
+ */
+/**
+ * Pull classes, to move grid items back to the left by certain amounts.
+ */
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all.
+ *
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * CONTENTS
+ * IMPORTS..............Import Defaults and Mixins
+ * SETUP................
+ */
+/*------------------------------------*\
+    $SETUP
+\*------------------------------------*/
+/**
+ * Our regular, non-responsive width classes.
+ */
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+/* line 339, ../sass/bower_components/dragoncss/objects/_widths.scss */
+[class*="push--"] {
+  position: relative;
+}
+
+/*
+* _main.scss
+**/
+/* line 5, ../sass/bower_components/dragoncss/base/_main.scss */
+html {
+  font: 1em/1.5 "Droid Sans", sans-serif;
+  overflow-y: scroll;
+  min-height: 100%;
+}
+
+/*
+* _typography.scss
+**/
+/* line 13, ../sass/bower_components/dragoncss/base/_typography.scss */
+h1, .alpha {
+  font-size: 48px;
+  line-height: 1;
+}
+
+/* line 15, ../sass/bower_components/dragoncss/base/_typography.scss */
+h2, .beta {
+  font-size: 41px;
+  line-height: 1.17073;
+}
+
+/* line 17, ../sass/bower_components/dragoncss/base/_typography.scss */
+h3, .gamma {
+  font-size: 29px;
+  line-height: 1.65517;
+}
+
+/* line 19, ../sass/bower_components/dragoncss/base/_typography.scss */
+h4, .delta {
+  font-size: 25px;
+  line-height: 1.92;
+}
+
+/* line 21, ../sass/bower_components/dragoncss/base/_typography.scss */
+h5, .epsilon {
+  font-size: 18px;
+  line-height: 1.33333;
+}
+
+/* line 23, ../sass/bower_components/dragoncss/base/_typography.scss */
+h6, .zeta {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* line 31, ../sass/bower_components/dragoncss/base/_typography.scss */
+h1, h2, h3, h4, h5, h6, hgroup,
+ul, ol, dl,
+blockquote, p, address,
+table,
+fieldset, figure,
+pre {
+  margin-bottom: 24px;
+}
+
+/* line 36, ../sass/bower_components/dragoncss/base/_typography.scss */
+table {
+  width: 100%;
+}
+
+/**
+ * `hr` elements only take up a few pixels, so we need to give them special
+ * treatment regarding vertical rhythm.
+ */
+/* line 45, ../sass/bower_components/dragoncss/base/_typography.scss */
+hr {
+  margin-bottom: 24px;
+}
+
+/**
+ * Where `margin-left` is concerned we want to try and indent certain elements
+ * by a consistent amount. Define that amount once, here.
+ */
+/* line 54, ../sass/bower_components/dragoncss/base/_typography.scss */
+ul, ol, dd {
+  margin-left: 24px;
+}
+
+/* line 1, ../sass/vaquinha/_tags.scss */
+html {
+  background-color: #bbb858;
+  background-image: url(../img/bg-top.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* line 8, ../sass/vaquinha/_tags.scss */
+body {
+  background-image: url(../img/bg-bot.png);
+  background-position: bottom center;
+  background-repeat: repeat-x;
+  font-size: 14px;
+}
+
+/* line 15, ../sass/vaquinha/_tags.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, ../sass/vaquinha/_head.scss */
+.head-top {
+  text-align: right;
+}
+
+/* line 5, ../sass/vaquinha/_head.scss */
+.head-top-nav {
+  line-height: 1;
+  margin: 0;
+  padding: 12px 0;
+}
+/* line 10, ../sass/vaquinha/_head.scss */
+.head-top-nav > li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 12px;
+}
+/* line 15, ../sass/vaquinha/_head.scss */
+.head-top-nav > li > a {
+  display: block;
+}
+/* line 18, ../sass/vaquinha/_head.scss */
+.head-top-nav > li > a > img {
+  display: block;
+}
+
+/* line 25, ../sass/vaquinha/_head.scss */
+.head-bot {
+  background-color: #33280f;
+  background-image: url(../img/wood_bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  padding: 15px 24px;
+  position: relative;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 25, ../sass/vaquinha/_head.scss */
+  .head-bot {
+    background-image: url(../img/head-bot-desk.png);
+    padding: 15px 48px;
+    text-align: left;
+  }
+}
+
+/* line 41, ../sass/vaquinha/_head.scss */
+.head-bot-img {
+  display: none;
+  bottom: 0;
+  right: 120px;
+  position: absolute;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 41, ../sass/vaquinha/_head.scss */
+  .head-bot-img {
+    display: block;
+  }
+}
+
+/* line 1, ../sass/vaquinha/_logo.scss */
+.logo {
+  display: inline-block;
+}
+/* line 4, ../sass/vaquinha/_logo.scss */
+.logo > img {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 1, ../sass/vaquinha/_btn.scss */
+.btn {
+  background-color: gray;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-weight: bold;
+  padding: 12px 18px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* line 12, ../sass/vaquinha/_btn.scss */
+.btn--positive {
+  background-color: #aabb2c;
+}
+/* line 15, ../sass/vaquinha/_btn.scss */
+.btn--positive:hover {
+  background-color: #8c9a24;
+}
+
+/* line 1, ../sass/vaquinha/_wrapper.scss */
+.wrapper {
+  margin: 0 auto;
+  width: 94%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/vaquinha/_wrapper.scss */
+  .wrapper {
+    width: 960px;
+  }
+}
+
+/* line 1, ../sass/vaquinha/_youtube.scss */
+.youtube {
+  background-color: #FFF;
+  color: #563818;
+  padding: 24px 24px 0;
+  position: relative;
+  text-align: center;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.youtube:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/vaquinha/_youtube.scss */
+  .youtube {
+    height: 326px;
+    padding: 24px 48px 0;
+  }
+}
+
+/* line 16, ../sass/vaquinha/_youtube.scss */
+.youtube-title {
+  font-family: 'Oleo Script';
+  font-size: 30px;
+}
+
+/* line 21, ../sass/vaquinha/_youtube.scss */
+.youtube-body {
+  padding-bottom: 24px;
+  position: relative;
+  text-align: left;
+  z-index: 222;
+}
+@media only screen and (min-width: 481px) {
+  /* line 21, ../sass/vaquinha/_youtube.scss */
+  .youtube-body {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 21, ../sass/vaquinha/_youtube.scss */
+  .youtube-body {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    width: 35%;
+  }
+}
+
+/* line 43, ../sass/vaquinha/_youtube.scss */
+.youtube-img {
+  display: inline-block;
+  margin-bottom: -7px;
+  right: 0;
+  bottom: 0;
+  z-index: 111;
+  max-width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 43, ../sass/vaquinha/_youtube.scss */
+  .youtube-img {
+    position: absolute;
+  }
+}
+
+/* line 1, ../sass/vaquinha/_dvd.scss */
+.dvd {
+  background-color: #f7f8ef;
+  background-image: url(../img/stars.png);
+  background-repeat: repeat;
+  background-position: center;
+  color: #563818;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 6, ../sass/bower_components/dragoncss/generic/_clearfix.scss */
+.dvd:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/vaquinha/_dvd.scss */
+  .dvd {
+    height: 326px;
+    padding: 24px 48px;
+    text-align: right;
+  }
+}
+
+/* line 21, ../sass/vaquinha/_dvd.scss */
+.dvd-title {
+  font-family: 'Oleo Script';
+  font-size: 30px;
+}
+
+/* line 26, ../sass/vaquinha/_dvd.scss */
+.dvd-body {
+  display: inline-block;
+  position: relative;
+  z-index: 222;
+}
+@media only screen and (min-width: 481px) {
+  /* line 26, ../sass/vaquinha/_dvd.scss */
+  .dvd-body {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 26, ../sass/vaquinha/_dvd.scss */
+  .dvd-body {
+    float: right;
+    text-align: left;
+    padding-top: 24px;
+    padding-right: 60px;
+    width: 38%;
+  }
+}
+
+/* line 44, ../sass/vaquinha/_dvd.scss */
+.dvd-img {
+  left: 60px;
+  bottom: -118px;
+  margin-bottom: 24px;
+  z-index: 111;
+}
+/* line 50, ../sass/vaquinha/_dvd.scss */
+.dvd-img > img {
+  display: inline-block;
+  margin-bottom: -7px;
+  width: 230px;
+  max-width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 44, ../sass/vaquinha/_dvd.scss */
+  .dvd-img {
+    position: absolute;
+  }
+  /* line 60, ../sass/vaquinha/_dvd.scss */
+  .dvd-img > img {
+    width: auto;
+  }
+}
+
+/* line 1, ../sass/vaquinha/_contact.scss */
+.contact {
+  background-color: #FFF;
+  color: #563818;
+  padding: 24px;
+  position: relative;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 1, ../sass/vaquinha/_contact.scss */
+  .contact {
+    height: 326px;
+    padding: 24px 48px;
+  }
+}
+
+/* line 14, ../sass/vaquinha/_contact.scss */
+.contact-title {
+  font-family: 'Oleo Script';
+  font-size: 30px;
+}
+
+/* line 19, ../sass/vaquinha/_contact.scss */
+.contact-body {
+  position: relative;
+  text-align: left;
+  z-index: 222;
+}
+@media only screen and (min-width: 481px) {
+  /* line 19, ../sass/vaquinha/_contact.scss */
+  .contact-body {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 19, ../sass/vaquinha/_contact.scss */
+  .contact-body {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    width: 35%;
+  }
+}
+
+/* line 39, ../sass/vaquinha/_contact.scss */
+.contact-img {
+  right: 6px;
+  top: 48px;
+  margin-bottom: 24px;
+  z-index: 111;
+  max-width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 39, ../sass/vaquinha/_contact.scss */
+  .contact-img {
+    position: absolute;
+  }
+}
+
+/* line 1, ../sass/vaquinha/_foot.scss */
+.foot {
+  color: #8d7e2c;
+  padding: 24px 0;
+  text-align: center;
+}
+
+/* line 7, ../sass/vaquinha/_foot.scss */
+.foot__title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* line 12, ../sass/vaquinha/_foot.scss */
+.foot__nav {
+  list-style: none;
+  margin-left: 0;
+}
+/* line 16, ../sass/vaquinha/_foot.scss */
+.foot__nav > li {
+  display: inline-block;
+  padding: 0 24px;
+  vertical-align: middle;
+}
+/* line 22, ../sass/vaquinha/_foot.scss */
+.foot__nav img {
+  max-width: 100%;
+}
+
+/* line 27, ../sass/vaquinha/_foot.scss */
+.foot__copyright {
+  margin-bottom: 0;
+}

@@ -1,0 +1,29 @@
+.foot {
+    color: #8d7e2c;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.foot__title {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.foot__nav {
+    list-style: none;
+    margin-left: 0;
+
+    > li {
+        display: inline-block;
+        padding: 0 24px;
+        vertical-align: middle;
+    }
+
+    img {
+        max-width:100%;
+    }
+}
+
+.foot__copyright {
+    margin-bottom: 0;
+}

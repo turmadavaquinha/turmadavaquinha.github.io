@@ -1,0 +1,64 @@
+.dvd {
+    @include cf();
+
+    background-color: #f7f8ef;
+    background-image: url(../img/stars.png);
+    background-repeat: repeat;
+    background-position: center;
+    color: #563818;
+    padding: 24px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+    @include media-query(desk) {
+        height: 326px;
+        padding: 24px 48px;
+        text-align: right;
+    }
+}
+
+.dvd-title {
+    font-family: 'Oleo Script';
+    font-size: 30px;
+}
+
+.dvd-body {
+    display: inline-block;
+    position: relative;
+    z-index: 222;
+
+    @include media-query(lap) {
+        width: 65%;
+    }
+
+    @include media-query(desk) {
+        float: right;
+        text-align: left;
+        padding-top: 24px;
+        padding-right: 60px;
+        width: 38%;
+    }
+}
+
+.dvd-img {
+    left: 60px;
+    bottom: -118px;
+    margin-bottom: 24px;
+    z-index: 111;
+
+    > img {
+        display: inline-block;
+        margin-bottom: -7px;
+        width: 230px;
+        max-width:100%;
+    }
+
+    @include media-query(desk) {
+        position: absolute;
+
+        > img {
+            width: auto;
+        }
+    }
+}
