@@ -837,14 +837,33 @@ a {
   font-weight: bold;
   padding: 12px 18px;
   text-transform: uppercase;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
 /* line 12, ../sass/vaquinha/_btn.scss */
+.btn__text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 17, ../sass/vaquinha/_btn.scss */
+.btn__icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom: 2px;
+  padding-left: 12px;
+}
+/* line 23, ../sass/vaquinha/_btn.scss */
+.btn__icon > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 29, ../sass/vaquinha/_btn.scss */
 .btn--positive {
   background-color: #aabb2c;
 }
-/* line 15, ../sass/vaquinha/_btn.scss */
+/* line 32, ../sass/vaquinha/_btn.scss */
 .btn--positive:hover {
   background-color: #8c9a24;
 }
@@ -859,6 +878,11 @@ a {
   .wrapper {
     width: 960px;
   }
+}
+
+/* line 1, ../sass/vaquinha/_page.scss */
+.page {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.75);
 }
 
 /* line 1, ../sass/vaquinha/_youtube.scss */
@@ -886,10 +910,11 @@ a {
 /* line 16, ../sass/vaquinha/_youtube.scss */
 .youtube-title {
   font-family: 'Oleo Script';
+  font-weight: 400;
   font-size: 30px;
 }
 
-/* line 21, ../sass/vaquinha/_youtube.scss */
+/* line 22, ../sass/vaquinha/_youtube.scss */
 .youtube-body {
   padding-bottom: 24px;
   position: relative;
@@ -897,13 +922,13 @@ a {
   z-index: 222;
 }
 @media only screen and (min-width: 481px) {
-  /* line 21, ../sass/vaquinha/_youtube.scss */
+  /* line 22, ../sass/vaquinha/_youtube.scss */
   .youtube-body {
     width: 70%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 21, ../sass/vaquinha/_youtube.scss */
+  /* line 22, ../sass/vaquinha/_youtube.scss */
   .youtube-body {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -914,7 +939,7 @@ a {
   }
 }
 
-/* line 43, ../sass/vaquinha/_youtube.scss */
+/* line 44, ../sass/vaquinha/_youtube.scss */
 .youtube-img {
   display: inline-block;
   margin-bottom: -7px;
@@ -924,7 +949,7 @@ a {
   max-width: 100%;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 43, ../sass/vaquinha/_youtube.scss */
+  /* line 44, ../sass/vaquinha/_youtube.scss */
   .youtube-img {
     position: absolute;
   }
@@ -960,23 +985,24 @@ a {
 /* line 21, ../sass/vaquinha/_dvd.scss */
 .dvd-title {
   font-family: 'Oleo Script';
+  font-weight: 400;
   font-size: 30px;
 }
 
-/* line 26, ../sass/vaquinha/_dvd.scss */
+/* line 27, ../sass/vaquinha/_dvd.scss */
 .dvd-body {
   display: inline-block;
   position: relative;
   z-index: 222;
 }
 @media only screen and (min-width: 481px) {
-  /* line 26, ../sass/vaquinha/_dvd.scss */
+  /* line 27, ../sass/vaquinha/_dvd.scss */
   .dvd-body {
     width: 65%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 26, ../sass/vaquinha/_dvd.scss */
+  /* line 27, ../sass/vaquinha/_dvd.scss */
   .dvd-body {
     float: right;
     text-align: left;
@@ -986,14 +1012,14 @@ a {
   }
 }
 
-/* line 44, ../sass/vaquinha/_dvd.scss */
+/* line 45, ../sass/vaquinha/_dvd.scss */
 .dvd-img {
   left: 60px;
   bottom: -118px;
   margin-bottom: 24px;
   z-index: 111;
 }
-/* line 50, ../sass/vaquinha/_dvd.scss */
+/* line 51, ../sass/vaquinha/_dvd.scss */
 .dvd-img > img {
   display: inline-block;
   margin-bottom: -7px;
@@ -1001,11 +1027,11 @@ a {
   max-width: 100%;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 44, ../sass/vaquinha/_dvd.scss */
+  /* line 45, ../sass/vaquinha/_dvd.scss */
   .dvd-img {
     position: absolute;
   }
-  /* line 60, ../sass/vaquinha/_dvd.scss */
+  /* line 61, ../sass/vaquinha/_dvd.scss */
   .dvd-img > img {
     width: auto;
   }
@@ -1030,23 +1056,24 @@ a {
 /* line 14, ../sass/vaquinha/_contact.scss */
 .contact-title {
   font-family: 'Oleo Script';
+  font-weight: 400;
   font-size: 30px;
 }
 
-/* line 19, ../sass/vaquinha/_contact.scss */
+/* line 20, ../sass/vaquinha/_contact.scss */
 .contact-body {
   position: relative;
   text-align: left;
   z-index: 222;
 }
 @media only screen and (min-width: 481px) {
-  /* line 19, ../sass/vaquinha/_contact.scss */
+  /* line 20, ../sass/vaquinha/_contact.scss */
   .contact-body {
     width: 70%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  /* line 19, ../sass/vaquinha/_contact.scss */
+  /* line 20, ../sass/vaquinha/_contact.scss */
   .contact-body {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1057,7 +1084,7 @@ a {
   }
 }
 
-/* line 39, ../sass/vaquinha/_contact.scss */
+/* line 40, ../sass/vaquinha/_contact.scss */
 .contact-img {
   right: 6px;
   top: 48px;
@@ -1066,7 +1093,7 @@ a {
   max-width: 100%;
 }
 @media only screen and (min-width: 1024px) {
-  /* line 39, ../sass/vaquinha/_contact.scss */
+  /* line 40, ../sass/vaquinha/_contact.scss */
   .contact-img {
     position: absolute;
   }
